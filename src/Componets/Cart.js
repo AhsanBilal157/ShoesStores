@@ -63,7 +63,7 @@ const removeProduct=id=>{
 
     
     if (cart.length === 0)
-        return <h2 style={{ textAlign: "center", fontSize: "3rem" }}>   Cart Empty</h2>
+        return <h2 style={{ paddingTop:"30px",textAlign: "center"}}>   Cart Empty</h2>
 
     return (
         <>
@@ -77,7 +77,6 @@ const removeProduct=id=>{
                             <h2 title={product.title}>{product.title}</h2>
 
                             <h3>${product.price}</h3>
-                            <Colors colors={product.colors} />
                             <Sizes sizes={product.sizes} />
 
 
@@ -110,8 +109,9 @@ const removeProduct=id=>{
             }
 
             <div className="total">
-                <Link to="/payment">Payment</Link>
-                <h3>Total:${total}</h3>
+                <div style={{paddingLeft:"125px"}}><Link to="/payment" >Payment</Link></div>
+                
+                <div style={{paddingRight:"125px"}}><h3>Total:${total}</h3></div>
 
             </div>
 

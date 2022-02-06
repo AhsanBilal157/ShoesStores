@@ -5,7 +5,7 @@ import {
     Paper,
     TextField,
     Button,
-    
+
 } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -28,8 +28,8 @@ const useStyles = makeStyles((theme) => ({
     input: {
         width: '95%',
         marginBottom: 10,
-        
-      
+
+
 
     }
 }));
@@ -37,23 +37,15 @@ const useStyles = makeStyles((theme) => ({
 function Login() {
 
     const classes = useStyles();
-    return (<
-        div className={
-            classes.root
-        } >
+    return (<div className={classes.root} >
 
-        <
-        Paper elevation={
-                3
-            }
+        <Paper elevation={3}
             className={
                 classes.paper
             } >
-            <
-        h1 > Login < /h1>
+            <h1 > Login </h1>
 
-                <
-        form className={
+                <form className={
                         classes.root
                     }
                     noValidate autoComplete="off" >
@@ -66,27 +58,27 @@ function Login() {
                     />
 
                     
-                       <Button variant="contained"
 
-
-                        className={classes.input} >
+                    <br />
+                    <Button variant="contained"
+                    className={classes.input} style={{backgroundColor:"darkred",color:"white"}}>
                         Log In
 
                     </Button>
 
-                    
-        </form>
 
-                    
-       < /Paper>
+                </form>
 
 
+                </Paper>
 
 
-                    
-        
-       </ div >
-                    );
+
+
+
+
+            </ div >
+            );
 }
 
-                    export default Login;
+            export default Login;

@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/ShoesStore/static/css/main.4870c5cb.chunk.css",
+    "main.js": "/ShoesStore/static/js/main.3968f6c0.chunk.js",
+    "main.js.map": "/ShoesStore/static/js/main.3968f6c0.chunk.js.map",
+    "runtime-main.js": "/ShoesStore/static/js/runtime-main.cded9338.js",
+    "runtime-main.js.map": "/ShoesStore/static/js/runtime-main.cded9338.js.map",
+    "static/css/2.ae9e5f60.chunk.css": "/ShoesStore/static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.98b5be3f.chunk.js": "/ShoesStore/static/js/2.98b5be3f.chunk.js",
+    "static/js/2.98b5be3f.chunk.js.map": "/ShoesStore/static/js/2.98b5be3f.chunk.js.map",
+    "static/js/3.b40e046d.chunk.js": "/ShoesStore/static/js/3.b40e046d.chunk.js",
+    "static/js/3.b40e046d.chunk.js.map": "/ShoesStore/static/js/3.b40e046d.chunk.js.map",
+    "index.html": "/ShoesStore/index.html",
+    "static/css/2.ae9e5f60.chunk.css.map": "/ShoesStore/static/css/2.ae9e5f60.chunk.css.map",
+    "static/css/main.4870c5cb.chunk.css.map": "/ShoesStore/static/css/main.4870c5cb.chunk.css.map",
+    "static/js/2.98b5be3f.chunk.js.LICENSE.txt": "/ShoesStore/static/js/2.98b5be3f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/ShoesStore/static/media/jordanpics.dd953c52.jpeg",
+    "static/media/Homess.0d6f8e5a.png": "/ShoesStore/static/media/Homess.0d6f8e5a.png",
+    "static/media/ahsanbilal.ebebcb20.png": "/ShoesStore/static/media/ahsanbilal.ebebcb20.png",
+    "static/media/air jordan nike1.f75a6536.png": "/ShoesStore/static/media/air jordan nike1.f75a6536.png",
+    "static/media/bars-solid.e8db7520.svg": "/ShoesStore/static/media/bars-solid.e8db7520.svg",
+    "static/media/cart.5799dfd9.svg": "/ShoesStore/static/media/cart.5799dfd9.svg",
+    "static/media/jordan1.977b6851.jpeg": "/ShoesStore/static/media/jordan1.977b6851.jpeg",
+    "static/media/jordanlogo2.3470a157.png": "/ShoesStore/static/media/jordanlogo2.3470a157.png",
+    "static/media/jwdshami.5a0e9334.png": "/ShoesStore/static/media/jwdshami.5a0e9334.png",
+    "static/media/kidsjordan.35884190.jpeg": "/ShoesStore/static/media/kidsjordan.35884190.jpeg",
+    "static/media/mensjordans.cdc9cbbe.jpeg": "/ShoesStore/static/media/mensjordans.cdc9cbbe.jpeg",
+    "static/media/productsss.67176512.png": "/ShoesStore/static/media/productsss.67176512.png",
+    "static/media/times-solid.ea7c95d7.svg": "/ShoesStore/static/media/times-solid.ea7c95d7.svg",
+    "static/media/womensjordans.12cfb94c.jpeg": "/ShoesStore/static/media/womensjordans.12cfb94c.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cded9338.js",
+    "static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.98b5be3f.chunk.js",
+    "static/css/main.4870c5cb.chunk.css",
+    "static/js/main.3968f6c0.chunk.js"
+  ]
+}

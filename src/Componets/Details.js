@@ -5,7 +5,8 @@ import Colors from './Colors'
 import Sizes from './Sizes'
 import DetailsThumb from './DetailsThumb'
 import { Link } from 'react-router-dom'
-
+import Button from '@material-ui/core/Button';
+import Icon from '@material-ui/core/Icon';
 
 
 export default function Details() { 
@@ -36,24 +37,21 @@ export default function Details() {
         <>
             {
                 details.map(product => (
-                    <div className="details" key={product._id}>
+                    <div className="details" data-aos="zoom-in" key={product._id}>
                         <div className="img-container" onMouseMove={handleMousemove}
                             style={{ backgroundImage: `url(${product.image[index]})` }} ref={imgDiv} onMouseLeave={() => imgDiv.current.style.backgroundPosition = `center`} />
 
                         <div className="box-details">
-                            <h2 title={product.title}>{product.title}</h2>
+                            <h2 style={{color:"darkred"}}title={product.title}>{product.title}</h2>
 
                             <h3>${product.price}</h3>
-                            <Colors colors={product.colors} />
-                            <Sizes sizes={product.sizes} />
 
-
-                            <p>{product.description}</p>
-                            <p>{product.content}</p>
+                            <p><h4>Description :</h4>{product.description}<br />{product.content}</p>
+                            
 
                             <DetailsThumb image={product.image} setIndex={setIndex} />
 
-                            <Link to="/cart" className="cart" onClick={() => addCart(product._id)}>Add to cart</Link>
+                            <Button className="button" onClick={() => addCart(product._id)}style={{backgroundColor:'black',color:'white',height:'1',width:'50',marginLeft:'20'}}>Add to Cart <Icon style={{ color: "darkred", height: 30, marginLeft: 150 }}>add_circle</Icon></Button>
 
 
 

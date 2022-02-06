@@ -5,14 +5,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
  
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 .App {
@@ -21,34 +14,29 @@ code {
 
  
    width: 100%;
-  margin: auto;
- 
-  
-  padding: 0 15px; 
 }
 /*/Header/*/
 
 header {
   width: 100%;
-  min-height: 100px;
+  min-height: 80px;
   overflow: hidden;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 20px;
 }
 a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #555;
+  color: black;
   letter-spacing: 2px;
 }
-a:hover {
-  color: aquamarine;
-}
+a:hover{
+  color:darkred;
 
+}
 ul li {
   list-style: none;
   display: inline-block;
@@ -79,17 +67,18 @@ ul li {
 
 .container2{
   width: 100%;
-  background-color: rgb(24, 23, 23);
+  background-color: rgb(0, 0, 0);
   margin-top: auto;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgb(0, 0, 0);
   margin-top: 20px;
   padding: 50px 100px;
+  position: sticky;
 }
 
 .Footer{
   Color:white;
-  margin-left: 100px;
-
+  display:flex;
+  padding: 31px 82px;
 
 }
 .contact{
@@ -105,27 +94,43 @@ ul li {
  
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 15px 0;
+
+  padding: 9px 55px;
 }
 
 .products .card {
+  width: 280px;
+    height: 500px;
+    margin: 40px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
   max-width: 380px;
-  width: 100%;
-  overflow: hidden;
-  height: 570px;
   box-shadow: 0 0 5px #ccc;
-  padding: 15px;
-  margin: 15px ;
+  /*/padding: 15px;*/
   cursor: pointer;
+  box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
 }
+.products>:hover{
+ box-shadow: 0px 0px 4px darkred;
+ transform: translate(0px, 10px);
+  transition: .4s ease-in-out
+  }
+  
+
+
 .card img {
-  width: 100%;
-  height: 100%;
+  height: 305px;
   max-height: 340px;
   display: block;
   object-fit: cover;
+  padding: 17px 52px;
+  padding-left: 20px;
+  width: 310px;
 }
 
 .card .box {
@@ -133,13 +138,17 @@ ul li {
 }
 .card h3 {
   text-transform: uppercase;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 2px;
+    padding: 0px 20px;
 }
 .card p {
-  margin: 10px 0;
-  line-height: 1.5;
+  margin: -20px 18px;
+  line-height: 3.5;
   display:-webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -148,21 +157,20 @@ ul li {
 }
 
 .card h4 {
-  color: chocolate;
+  color: darkred;
 }
-.card button {
-  width: 100%;
+ .button {
+  width: 278px;
   border: none;
   outline: none;
   background: #333;
   color: white;
   text-align: center;
-  padding: 10px 0;
-  margin: 10px 0;
+  padding: 10px 7px;
   margin: 10px 0;
   cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 /*//..............................................Details.................*/
@@ -318,10 +326,11 @@ ul li {
 .delete{
   position: absolute;
   top: 0;
-  right: 5px;
+  right: 100px;
   color: crimson;
   cursor: pointer;
   font-weight: 900;
+  font-size: 20px;
 
 
 }
@@ -336,11 +345,13 @@ ul li {
 }
 
 .total a{
-  background:#333;
+  background:rgb(0, 0, 0);
   color: white;
+  border-radius: 20px;
   padding: 10px 25px;
 
 }
+
 .total{
   margin-right: 50px;
   color: crimson;
@@ -349,17 +360,342 @@ ul li {
 /*/////////Home/////////*/
 
 
-.home{
 
-display: cover;
-}
-.home img{
-  width: 100%;
-  height: 100vh;
-}
   
   /*/......................login...............*/
 Button{
   color: #333;
 
+}
+
+/*/...................bg image.........*/
+.headerHome{
+  width: 100%;
+  height: 100%;
+  background-image: url('./4KDr.gif');
+  background-size: cover;
+}
+ 
+.text-Color{
+  text-align:center;
+  color: white;
+  padding-left: 40px;
+  font-weight: bold;
+  padding-right: 60%;
+
+  margin: -5px 2px;
+}
+.btnhome{
+  background-color: darkred;
+  color: rgb(255, 255, 255);
+  height: 40px;
+    width: 120px;
+    border-radius: 7px;
+}
+.text2{
+
+  text-align:center;
+  padding-right: 48%;
+  color: white;
+}
+.padd{
+  color: white;
+  padding-left: 11%;
+}
+.textcenter{
+  text-align:center;
+}
+button{
+  border: 0;
+}
+ul {
+  margin-top: 22px;
+  margin-bottom: 1rem;
+}
+.Container{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 21px 10px;
+  padding-left: 46px;
+
+}
+
+.Container > .link{
+  width: 300px;
+  box-shadow: 0 0 10px black;
+  margin: 20px;
+  text-align: center;
+  color: darkred;
+  border-radius: 25px;
+}
+.font{
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
+  letter-spacing: 0px;
+}
+.bigbox {
+  width: 82%;
+    height: 500px;
+    margin: 40px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 120px;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 30px;
+  background-color: darkred;
+  /*/padding: 15px;*/
+  cursor: pointer;
+  display: flex;
+  box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+}
+.bigbox img{
+  border-radius: 30px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+
+}
+.headline{
+  font-size: 100px;
+  font-weight: bold;
+  color: yellow;
+}
+
+/*/.Container > .link:hover{
+  background-color: lightblue;
+  color: white;
+}*/
+
+/*/.............................About......................*/
+
+.about{
+display:flex;
+direction: row;
+
+}
+.rectangle{
+
+  height: 500px;
+  width: 600px;
+  background-color: darkred;
+  
+  border-radius: 30px;
+  margin-left: -100px;
+}
+.subrectangle{
+  height: 280px;
+  width: 550px;
+  background-color: black;
+
+  border-radius: 30px;
+  margin-left: 300px ;
+  margin-top: 10px;
+  
+  overflow: unset;
+  position:relative
+}
+.subrectangle > img{
+  position:absolute;
+  height:280px;
+  width: 550px;
+  border-radius: 30px;
+}
+.sub2rectangle{
+  border-radius: 30px;
+  background-color: green;
+
+  margin-left: 400px ;
+  margin-top: -100px;
+  
+  overflow: unset;
+  position:relative;
+  height: 180px;
+  width: 350px;
+}
+.sub2rectangle>img{
+  position:absolute;
+  height: 180px;
+  width: 350px;
+  border-radius: 30px;
+}
+
+
+  .rightrectangle{
+  
+    height: 500px;
+    width: 600px;
+    background-color: darkred;
+    
+    border-radius: 30px;
+    margin-left: 800px;
+  }
+  .rightsubrectangle{
+    height: 280px;
+    width: 500px;
+    background-color: black;
+  
+    border-radius: 30px;
+    margin-left: 500px ;
+    margin-top: 20px;
+    
+    overflow: unset;
+    position:relative
+  }
+  .rightsubrectangle > img{
+    position:absolute;
+    height:280px;
+    width: 550px;
+    border-radius: 30px;
+  }
+  .rightsub2rectangle{
+    border-radius: 30px;
+    background-color: green;
+    overflow: unset;
+    position:relative;
+    height: 180px;
+    width: 350px;
+    padding-right: 50px;
+  }
+  .rightsub2rectangle>img{
+    position:absolute;
+    height: 180px;
+    width: 350px;
+    border-radius: 30px;
+  }
+  .rightappdetails {
+    margin-left: 150%;
+  }
+  .square {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    left: 0;
+}
+.square span:nth-child(1) {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: 38% 62% 63% 37% /  41% 44% 56% 59%;
+  transition: 1.5s;
+  background: #050505;
+  opacity: 0.4;
+  animation: animate 6s linear infinite;
+}
+
+.square:hover span:nth-child(1) {
+  background: #030303;
+  border-radius: 100%;
+  opacity: 0.5;
+}
+
+
+.square span:nth-child(2) {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: 38% 62% 63% 37% /  41% 44% 56% 59%;
+  transition: 1.5s;
+  background: #000000;
+  opacity: 0.6;
+  animation: animate 4s linear infinite;
+}
+
+.square:hover span:nth-child(2) {
+  background: #020202;
+  border-radius: 100%;
+  opacity: 0.5;
+}
+
+.square span:nth-child(3) {
+  position: absolute;
+  width: 35%;
+  height: 60%;
+  border-radius: 38% 62% 63% 37% /  41% 44% 56% 59%;
+  transition: 1.5s;
+  background: #000000;
+  opacity: 0.8;
+  animation: animate2 10s linear infinite;
+}
+
+.square:hover span:nth-child(3) {
+  background: #020202;
+  border-radius: 100%;
+  opacity: 0.5;
+}
+.content {
+  position: relative;
+  text-align: center;
+  padding: 50px 30px;
+  color: #690202;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.content > h2 {
+  font-size: 1em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+.content > p {
+  font-size: 11pt;
+}
+#bigbox {
+  width: 82%;
+    height: 500px;
+    margin: 40px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 120px;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 30px;
+  background-color: rgb(252, 252, 252);
+  /*/padding: 15px;*/
+  cursor: pointer;
+  align-items: center;
+  align-content: center;
+  box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+}
+#bigbox img{
+  padding-right: 100px;
+}
+.bigboxflexing{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 91px;
+}
+#bigboxflexing{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 14px 1px;
+text-align: center;
+}
+.flexing{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#headerHome{
+  width: 100%;
+  height: 100%;
+  background-image: url('./jordanpics.jpeg');
+  background-size: cover;
 }
